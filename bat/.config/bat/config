@@ -1,0 +1,9 @@
+# Set the theme, list: OneDark, TwoDark, Nord, Gruvbox, Solarized, gruvbox-dark .
+--theme="gruvbox-dark"
+
+# Show line numbers, Git modifications and file header (but no grid)
+--style="numbers,changes,header"
+
+# Use italic text on the terminal (not supported on all terminals)
+--italic-text=always
+

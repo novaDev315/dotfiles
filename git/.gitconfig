@@ -1,0 +1,8 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Mohamed
+	email = contact@novadev.tech
+[core]
+	excludesfile = ~/.gitignore_global
+    editor = nvim	
