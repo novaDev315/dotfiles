@@ -24,20 +24,20 @@ return {
     require('mason-lspconfig').setup({
       -- Update this list to the language servers you need installed
       ensure_installed = {
-        -- "bashls", # requires npm to be installed
+        "bashls",
         "cssls",
         "html",
-        "gradle_ls",
-      --  "groovyls",
         "lua_ls",
-        -- "intelephense", # requires npm to be installed
-        -- "jsonls", # requires npm to be installed
-        "lemminx",
+        "jsonls",
         "marksman",
-        "quick_lint_js",
+        "yamlls",
+        "dockerls",
+        "pylsp",
         "tsserver",
-        -- "yamlls", # requires npm to be installed
-      }
+        "tailwindcss",
+        "clangd"
+      },
+      automatic_installation = true,
     })
 
     local lspconfig = require('lspconfig')
