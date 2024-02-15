@@ -16,7 +16,8 @@
         nixpkgs.tmux \
         nixpkgs.bat \
         nixpkgs.direnv \
-        nixpkgs.ripgrep
+        nixpkgs.ripgrep \
+        nixpkgs.zoxide
 
 # stow 
  stow git -t ~
