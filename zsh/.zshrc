@@ -34,25 +34,11 @@ export NVM_COMPLETION=true
 source ${HOME}/.zsh_plugins.sh
 # source alias
 source $HOME/.aliases
-# Source zsh 
-alias rzsh='source ~/.zshrc'
-alias zshrc='nvim ~/.dotfiles/zsh/.zshrc'
-# Bundle zsh plugins via antibody
-alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
-# List out all globally installed npm packages
-alias list-npm-globals='npm list -g --depth=0'
-# open vim config from anywhere
-alias nvimrc='nvim ${HOME}/.config/nvim/init.lua'
 
 # FZF
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --padding=1"
 
-# Bat
-#export BAT_THEME="gruvbox-dark"
-# Bat overwrite --help & -h command to show the result using bat 
-alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
-alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 # Bat & Git diff 
 batdiff() {
     git diff --name-only --relative --diff-filter=d | xargs bat --diff
