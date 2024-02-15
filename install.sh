@@ -17,7 +17,8 @@
         nixpkgs.bat \
         nixpkgs.direnv \
         nixpkgs.ripgrep \
-        nixpkgs.zoxide
+        nixpkgs.zoxide \
+        nixpkgs.tldr
 
 # stow 
  stow git -t ~
