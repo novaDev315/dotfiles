@@ -1,4 +1,4 @@
-# Set the theme, list: OneDark, TwoDark, Nord, Gruvbox, Solarized, gruvbox-dark .
+# Set the theme, ( bat --list-themes ) list: OneDark, TwoDark, Nord, Gruvbox, Solarized, gruvbox-dark .
 --theme="gruvbox-dark"
 
 # Show line numbers, Git modifications and file header (but no grid)
@@ -6,4 +6,3 @@
 
 # Use italic text on the terminal (not supported on all terminals)
 --italic-text=always
-
