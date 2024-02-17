@@ -20,10 +20,13 @@
         nixpkgs.zoxide \
         nixpkgs.tldr
 
-# stow 
+# create the config folders 
+mkdir -p ~/.config/{nvim, bat}
+# stow the configs files
  stow git -t ~
  stow zsh -t ~
- stow nvim -t ~
+ stow nvim -t ~/.config/nvim/
+ stow bat -t ~/.config/bat/
  stow tmux -t ~
  stow mime -t ~
 
