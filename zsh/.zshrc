@@ -30,6 +30,11 @@ export NVM_COMPLETION=true
 # source Node Version Manager
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
+# zsh-history-substring-search configuration
+bindkey '^[[A' history-substring-search-up 
+bindkey '^[[B' history-substring-search-down
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+
 # ZSH Auto-Notify
 export AUTO_NOTIFY_IGNORE+=("docker" "man")
 # source zsh plugins
