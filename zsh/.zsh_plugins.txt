@@ -18,4 +18,4 @@ zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
 
 MichaelAquilina/zsh-auto-notify
-
+MichaelAquilina/zsh-you-should-use
