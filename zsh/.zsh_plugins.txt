@@ -5,6 +5,8 @@ robbyrussell/oh-my-zsh path:plugins/command-not-found
 robbyrussell/oh-my-zsh path:plugins/git
 robbyrussell/oh-my-zsh path:plugins/git-extras
 robbyrussell/oh-my-zsh path:plugins/node
+robbyrussell/oh-my-zsh path:plugins/charm
+robbyrussell/oh-my-zsh path:plugins/yarn
 
 romkatv/powerlevel10k
 
@@ -13,3 +15,6 @@ rupa/z
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 zsh-users/zsh-syntax-highlighting
+
+MichaelAquilina/zsh-auto-notify
+

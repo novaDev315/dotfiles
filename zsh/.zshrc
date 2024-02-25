@@ -30,6 +30,8 @@ export NVM_COMPLETION=true
 # source Node Version Manager
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
+# ZSH Auto-Notify
+export AUTO_NOTIFY_IGNORE+=("docker" "man")
 # source zsh plugins
 source ${HOME}/.zsh_plugins.sh
 # source alias
