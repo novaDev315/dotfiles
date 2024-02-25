@@ -36,7 +36,7 @@ bindkey '^[[B' history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
 # ZSH Auto-Notify
-export AUTO_NOTIFY_IGNORE+=("docker" "man")
+#export AUTO_NOTIFY_IGNORE+=("docker" "man")
 # source zsh plugins
 source ${HOME}/.zsh_plugins.sh
 # source alias
