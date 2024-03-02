@@ -40,6 +40,19 @@ keymap.set("n", "<leader>qp", ":cprev<CR>") -- jump to prev quickfix list item
 -- Dismiss Noice Messaegs
 keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", {desc = "Dismiss Noice Messages"})
 
+-- Copy file paths
+keymap.set("n", "<leader>cf", "<cmd>let @+ = expand(\"%\")<CR>", { desc = "Copy File Name" })
+keymap.set("n", "<leader>cp", "<cmd>let @+ = expand(\"%:p\")<CR>", { desc = "Copy File Path" })
+
+-- Make current file executable
+keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "Make current file executable" })
+
+-- Select all
+keymap.set("n", "==", "gg<S-v>G")
+
+-- Open Zoxide telescope extension
+keymap.set("n", "<leader>Z", "<cmd>Zi<CR>", { desc = "Open Zoxide" })
+
 -- Vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle maximize tab
 
