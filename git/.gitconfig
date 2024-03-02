@@ -2,7 +2,7 @@
 	defaultBranch = main
 [user]
 	name = Mohamed
-	email = contact@novadev.tech
+	email = mohamed@novadev.tech
 [core]
 	excludesfile = ~/.gitignore_global
     editor = nvim	
