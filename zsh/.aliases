@@ -14,7 +14,7 @@ alias update='sudo apt update -y && sudo apt upgrade -y'
 
 # Source zsh 
 alias rzsh='source ~/.zshrc'
-alias zshrc='nvim ~/.dotfiles/zsh/.zshrc'
+alias zshrc='nvim ~/dotfiles/zsh/.zshrc'
 # Bundle zsh plugins via antibody
 alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
 # List out all globally installed npm packages
