@@ -19,7 +19,10 @@
         nixpkgs.ripgrep \
         nixpkgs.zoxide \
         nixpkgs.tldr \
-        nixpkgs.libnotify
+        nixpkgs.libnotify \
+        nixpkgs.lsd \
+        nixpkgs.fd \
+        nixpkgs.duf
 
 # create the config folders 
 mkdir -p ~/.config/{nvim, bat}
