@@ -42,12 +42,12 @@ base_packages=(
 
 # Prompt for optional Hyperland and related applications
 optional_packages=()
-optional_packages+=($(prompt_for_package "Hyperland" "hyperland"))
+optional_packages+=($(prompt_for_package "Hyprland" "hyprland"))
 optional_packages+=($(prompt_for_package "Alacritty (terminal emulator)" "alacritty"))
 optional_packages+=($(prompt_for_package "Swaylock (screen locker)" "swaylock"))
 optional_packages+=($(prompt_for_package "Waybar (status bar)" "waybar"))
 optional_packages+=($(prompt_for_package "Wofi (application launcher)" "wofi"))
-optional_packages+=($(prompt_for_package "Hyprsome (multi-monitor management)" "hyprsome"))
+#optional_packages+=($(prompt_for_package "Hyprsome (multi-monitor management)" "hyprsome"))
 optional_packages+=($(prompt_for_package "Nemo (file manager)" "nemo"))
 optional_packages+=($(prompt_for_package "Grim (screenshot tool)" "grim"))
 optional_packages+=($(prompt_for_package "Slurp (screenshot tool)" "slurp"))
@@ -77,7 +77,7 @@ fi
 yay -S --noconfirm "${optional_packages[@]}"
 
 # Create the config folders 
-mkdir -p ~/.config/{nvim,bat,hypr,alacritty,swaylock,waybar,wofi,hyprsome,wallpapers}
+mkdir -p ~/.config/{nvim,bat,hypr,alacritty,swaylock,waybar,wofi,wallpapers}
 
 # Create the screenshots folder for grim and slurp
 [ -d ~/Pictures/screenshots ] && mkdir -p ~/Pictures/screenshots
@@ -96,7 +96,7 @@ mkdir -p ~/.config/{nvim,bat,hypr,alacritty,swaylock,waybar,wofi,hyprsome,wallpa
 [ -d configs/swaylock ] && stow -d configs swaylock -t ~/.config/swaylock/
 [ -d configs/waybar ] && stow -d configs waybar -t ~/.config/waybar/
 [ -d configs/wofi ] && stow -d configs wofi -t ~/.config/wofi/
-[ -d configs/hyprsome ] && stow -d configs hyprsome -t ~/.config/hyprsome/
+#[ -d configs/hyprsome ] && stow -d configs hyprsome -t ~/.config/hyprsome/
 [ -d configs/wallpapers ] && mkdir -p ~/.config/wallpapers && cp -r configs/wallpapers/* ~/.config/wallpapers/
 
 # Install Node Version Manager 
