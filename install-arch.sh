@@ -79,6 +79,9 @@ yay -S --noconfirm "${optional_packages[@]}"
 # Create the config folders 
 mkdir -p ~/.config/{nvim,bat,hyperland,alacritty,swaylock,waybar,wofi,hyprsome,wallpapers}
 
+# Create the screenshots folder for grim and slurp
+[ -d ~/Pictures/screenshots ] && mkdir -p ~/Pictures/screenshots
+
 # Stow the config files
 [ -d configs/git ] && stow -d configs git -t ~
 [ -d configs/zsh ] && stow -d configs zsh -t ~
