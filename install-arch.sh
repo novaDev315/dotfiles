@@ -77,7 +77,7 @@ fi
 yay -S --noconfirm "${optional_packages[@]}"
 
 # Create the config folders 
-mkdir -p ~/.config/{nvim,bat,hyperland,alacritty,swaylock,waybar,wofi,hyprsome,wallpapers}
+mkdir -p ~/.config/{nvim,bat,hypr,alacritty,swaylock,waybar,wofi,hyprsome,wallpapers}
 
 # Create the screenshots folder for grim and slurp
 [ -d ~/Pictures/screenshots ] && mkdir -p ~/Pictures/screenshots
@@ -91,7 +91,7 @@ mkdir -p ~/.config/{nvim,bat,hyperland,alacritty,swaylock,waybar,wofi,hyprsome,w
 [ -d configs/mime ] && stow -d configs mime -t ~
 
 # Stow Hyperland and related applications' config files if they exist
-[ -d configs/hyperland ] && stow -d configs hyperland -t ~/.config/hyperland/
+[ -d configs/hyperland ] && stow -d configs hyprland -t ~/.config/hypr/
 [ -d configs/alacritty ] && stow -d configs alacritty -t ~/.config/alacritty/
 [ -d configs/swaylock ] && stow -d configs swaylock -t ~/.config/swaylock/
 [ -d configs/waybar ] && stow -d configs waybar -t ~/.config/waybar/
