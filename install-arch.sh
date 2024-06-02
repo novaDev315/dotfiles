@@ -91,7 +91,7 @@ mkdir -p ~/.config/{nvim,bat,hypr,alacritty,swaylock,waybar,wofi,wallpapers}
 [ -d configs/mime ] && stow -d configs mime -t ~
 
 # Stow Hyperland and related applications' config files if they exist
-[ -d configs/hyperland ] && stow -d configs hyprland -t ~/.config/hypr/
+[ -d configs/hypr ] && stow -d configs hypr -t ~/.config/hypr/
 [ -d configs/alacritty ] && stow -d configs alacritty -t ~/.config/alacritty/
 [ -d configs/swaylock ] && stow -d configs swaylock -t ~/.config/swaylock/
 [ -d configs/waybar ] && stow -d configs waybar -t ~/.config/waybar/
