@@ -56,7 +56,7 @@ optional_packages+=($(prompt_for_package "Wlogout (logout menu)" "wlogout"))
 optional_packages+=($(prompt_for_package "Papirus Folders Catppuccin (folder theme)" "papirus-folders-catppuccin-git"))
 optional_packages+=($(prompt_for_package "Papirus Icon Theme (icon theme)" "papirus-icon-theme-git"))
 optional_packages+=($(prompt_for_package "Catppuccin GTK Theme (theme)" "catppuccin-gtk-theme-mocha-git"))
-
+optional_packages+=($(prompt_for_package "Antidote for zsh shell package manager" "zsh-antidote"))
 # Install base packages
 sudo pacman -S --noconfirm "${base_packages[@]}"
 
