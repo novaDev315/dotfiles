@@ -38,6 +38,9 @@ base_packages=(
     lsd
     fd
     duf
+    nodejs
+    npm
+    unzip
 )
 
 # Prompt for optional Hyperland and related applications
