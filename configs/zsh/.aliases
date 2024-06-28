@@ -5,23 +5,18 @@ alias cp="cp -iv"
 alias mv="mv -iv"
 alias rm="rm -ivI"
 alias mkd="mkdir -pv"
-alias ls="exa --icons --group-directories-first"
+alias ls="eza --icons=always --group-directories-first"
 alias lf="lfcd"
 alias locate="plocate"
 alias grep='grep --color=always'
 
-alias update='sudo apt update -y && sudo apt upgrade -y'
+alias update='sudo pacman -Syu --noconfirm'
 
 # Source zsh 
 alias rzsh='source ~/.zshrc'
-alias zshrc='nvim ~/dotfiles/zsh/.zshrc'
-# Bundle zsh plugins via antibody
-alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
+alias zshrc='nvim ~/dotfiles/configs/zsh/.zshrc'
 # List out all globally installed npm packages
 alias list-npm-globals='npm list -g --depth=0'
-# open vim config from anywhere
-alias nvimrc='nvim ${HOME}/.config/nvim/init.lua'
-
 # Bat overwrite --help & -h command to show the result using bat 
 alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
 alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'

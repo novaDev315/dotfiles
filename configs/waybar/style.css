@@ -3,7 +3,7 @@
 }
 
 #waybar {
-  background: #171717;
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
@@ -40,12 +40,16 @@
 
 #network {
   color: #3b82f6;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 #pulseaudio {
   color: #14b8a6;
   margin-right: 4px;
+}
+
+#battery {
+  margin-right: 8px;
 }
 
 #cpu {
@@ -55,7 +59,7 @@
 
 #temperature {
   color: #eab308;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 #memory {
@@ -65,4 +69,5 @@
 
 #custom-powermenu {
   color: #f43f5e;
+  margin-right: 2px;
 }

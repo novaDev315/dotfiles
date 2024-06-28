@@ -28,7 +28,7 @@
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 8
+    "spacing": 10
   },
   "clock": {
     // 24 hour
@@ -58,16 +58,16 @@
       "9": "9",
       "10": "10",
       // 11-10
-      "11": "1",
-      "12": "2",
-      "13": "3",
-      "14": "4",
-      "15": "5",
-      "16": "6",
-      "17": "7",
-      "18": "8",
-      "19": "9",
-      "110": "10"
+      "11": "11",
+      "12": "12",
+      "13": "13",
+      "14": "14",
+      "15": "15",
+      "16": "16",
+      "17": "17",
+      "18": "18",
+      "19": "19",
+      "20": "20"
       
       // // 1-10
       // "1": "一",
@@ -90,7 +90,7 @@
       // "17": "七",
       // "18": "八",
       // "19": "九",
-      // "110": "十"
+      // "20": "十"
 	  }
   },
   "hyprland/window": {
@@ -98,7 +98,7 @@
   },
   "network": {
     "format": " 󰖩",
-    // "tooltip": "{ifname}",
+    "tooltip": "{ifname}",
     "tooltip-format": "{essid}",
     "interval": 2
   },
@@ -122,8 +122,13 @@
   },
   "pulseaudio": {
     "format": " {volume}%",
-    "scroll-step": 1,
-    "on-click": "pavucontrol"
+    "tooltip": "Audio",
+    "return-type": "boolean",
+    "on-click": "pavucontrol",
+    "on-scroll": "volume",
+    "on-click-right": "mute",
+    "on-click-middle": "toggle-mic",
+    "interval": 1
   },
   "battery": {
     "format": "{capacity}% {icon}",

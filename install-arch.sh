@@ -41,8 +41,19 @@ base_packages=(
     nodejs
     npm
     unzip
+    vivaldi
+    spotify-launcher
+    eza
 )
 
+# Audio packages 
+audio_packages=(
+  pipewire
+  pipewire-media-session
+  pipewire-alsa
+  pipewire-pulse
+  pavucontrol
+)
 # Prompt for optional Hyperland and related applications
 optional_packages=()
 optional_packages+=($(prompt_for_package "Hyprland" "hyprland"))
@@ -62,7 +73,8 @@ optional_packages+=($(prompt_for_package "Catppuccin GTK Theme (theme)" "catppuc
 optional_packages+=($(prompt_for_package "Antidote for zsh shell package manager" "zsh-antidote"))
 # Install base packages
 sudo pacman -S --noconfirm "${base_packages[@]}"
-
+#Install audio packages
+sudo pacman -S --noconfirm "${audio_packages[@]}"
 # Install fonts
 sudo pacman -S --noconfirm "${fonts[@]}"
 
@@ -102,9 +114,6 @@ mkdir -p ~/.config/{nvim,bat,hypr,alacritty,swaylock,waybar,wofi,wallpapers}
 #[ -d configs/hyprsome ] && stow -d configs hyprsome -t ~/.config/hyprsome/
 [ -d configs/wallpapers ] && mkdir -p ~/.config/wallpapers && cp -r configs/wallpapers/* ~/.config/wallpapers/
 
-# Install Node Version Manager 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
 # Add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells
 
@@ -113,7 +122,7 @@ sudo sed s/required/sufficient/g -i /etc/pam.d/chsh # fix chsh PAM Authenticatio
 sudo chsh -s $(which zsh) $USER
 
 # Bundle zsh plugins
-antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh
+# antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh
 
 # Install neovim plugins
 nvim --headless "+Lazy! sync" +qa

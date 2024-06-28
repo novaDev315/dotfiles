@@ -40,7 +40,7 @@ HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 source '/usr/share/zsh-antidote/antidote.zsh'
 antidote load
 # source zsh plugins
-source ${HOME}/.zsh_plugins.sh
+# source ${HOME}/.zsh_plugins.sh
 # source alias
 source $HOME/.aliases
 
@@ -52,11 +52,6 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 batdiff() {
     git diff --name-only --relative --diff-filter=d | xargs bat --diff
 } 
-
-# nix
-if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then 
-  . ~/.nix-profile/etc/profile.d/nix.sh; 
-fi
 
 # zoxide 
 eval "$(zoxide init --cmd cd zsh)"
